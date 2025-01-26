@@ -1,0 +1,39 @@
+# Inner Join
+SELECT
+	tpep_pickup_datetime,
+	tpep_dropoff_datetime,
+	total_amount, 
+	CONCAT(zpu."Borough", ' / ', zpu."Zone") AS "pick_up_loc",
+	CONCAT(zdo."Borough", ' / ', zpu."Zone") AS "drop_off_loc"
+FROM
+	yellow_taxi_data t JOIN zones zpu ON t."PULocationID" = zpu."LocationID"
+	  				   JOIN zones zdo ON t."DOLocationID" = zdo."LocationID"
+WHERE
+	
+	t."DOLocationID" = zdo."LocationID"
+LIMIT 100
+
+# Left Join
+SELECT
+	tpep_pickup_datetime,
+	tpep_dropoff_datetime,
+	total_amount, 
+	CONCAT(zpu."Borough", ' / ', zpu."Zone") AS "pick_up_loc",
+	CONCAT(zdo."Borough", ' / ', zpu."Zone") AS "drop_off_loc"
+FROM
+	yellow_taxi_data t LEFT JOIN zones zpu ON t."PULocationID" = zpu."LocationID"
+	  				   LEFT JOIN zones zdo ON t."DOLocationID" = zdo."LocationID"
+WHERE
+	
+	t."DOLocationID" = zdo."LocationID"
+LIMIT 100
+
+
+# Other Functions
+SELECT
+    DATE_TRUNC('DAY', tpep_dropoff_datetime) // keep only the date
+SELECT
+    CAST(tpep_dropoff_datetime AS DATE) as "day" // cast to the date type
+GROUP BY
+    CAST(tpep_dropoff_datetime AS DATE) as "day" // gets count by day
+ORDER BY "day" ASC; // order table by date from ascending or descending

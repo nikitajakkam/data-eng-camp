@@ -4,5 +4,7 @@
 # Ignore virtual environment folder
 **/venv/
 
-# Ignore ny_taxi_postgres_data folder
+# Ignore NY Taxi Data
 **/ny_taxi_postgres_data/
+taxi_zone_lookup.csv
+yellow_tripdata_2021-01.csv
