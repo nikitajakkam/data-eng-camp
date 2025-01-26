@@ -3,3 +3,6 @@
 
 # Ignore virtual environment folder
 **/venv/
+
+# Ignore ny_taxi_postgres_data folder
+**/ny_taxi_postgres_data/
