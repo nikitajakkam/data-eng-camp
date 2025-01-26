@@ -1,1 +1,5 @@
-01-docker-terraform/2_docker_sql/venv
+# Ignore Jupyter notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Ignore virtual environment folder
+**/venv/
