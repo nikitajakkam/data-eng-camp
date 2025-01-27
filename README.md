@@ -62,4 +62,4 @@ ORDER BY
     t.tip_amount DESC;
 ```
 
-- **Q7 Answer**L terraform init, terraform apply -auto-approve, terraform destroy
+- **Q7 Answer**: terraform init, terraform apply -auto-approve, terraform destroy
