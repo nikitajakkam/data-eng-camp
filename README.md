@@ -2,17 +2,15 @@
 Intro to Data Engineering 
 
 ## Homework 1
-- Q1:
+- Q1: **Answer**: 24.3.1
 ```
 docker run -it --entrypoint bash python:3.12.8
 pip --version
 ```
-  - **Answer**: 24.3.1
 
-- Q2:
-  - **Answer**: db:5432
-
-- Q3:
+- Q2: **Answer**: db:5432
+ 
+- Q3: **Answer**: 104,802; 198,924; 109,603; 27,678; 35,189
 ```
 SELECT 
     COUNT(*)
@@ -23,17 +21,15 @@ WHERE
     AND CAST(lpep_dropoff_datetime AS DATE) < '2019-11-01'
 	AND trip_distance > 3 AND trip_distance <= 7;
 ```
-  - **Answer**: 104,802; 198,924; 109,603; 27,678; 35,189
 
-- Q4:
+- Q4: **Answer**: 2019-10-31
 ```
 SELECT *
 FROM green_taxi_data
 ORDER BY trip_distance DESC;
 ```
-  - **Answer**: 2019-10-31
 
-- Q5:
+- Q5: **Answer**: East Harlem North, East Harlem South, Morningside Heights
 ```
 SELECT
     CONCAT(zpu."Borough", ' / ', zpu."Zone") AS "pick_up_loc",
@@ -48,9 +44,8 @@ GROUP BY
 ORDER BY
     total_amount DESC;
 ```
-  - **Answer**: East Harlem North, East Harlem South, Morningside Heights
 
-Q6:
+Q6: **Answer**: East Harlem North
 ```
 SELECT
     lpep_pickup_datetime,
@@ -66,7 +61,5 @@ WHERE
 ORDER BY
     t.tip_amount DESC;
 ```
-  - **Answer**: East Harlem North
 
-- Q7:
-  - **Answer** terraform init, terraform apply -auto-approve, terraform destroy
+- Q7: **Answer** terraform init, terraform apply -auto-approve, terraform destroy
