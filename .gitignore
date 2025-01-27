@@ -8,3 +8,4 @@
 **/ny_taxi_postgres_data/
 taxi_zone_lookup.csv
 yellow_tripdata_2021-01.csv
+green_tripdata_2019-10.csv
