@@ -9,3 +9,14 @@
 taxi_zone_lookup.csv
 yellow_tripdata_2021-01.csv
 green_tripdata_2019-10.csv
+
+# Ignore GCP Kestra Files 
+04_gcp_kv.yaml
+05_gcp_setup.yaml
+06_gcp_taxi_scheduled.yaml
+06_gcp_taxi.yaml
+07_gcp_dbt.yaml
+.env_encoded
+
+# Ignore Kestra docker-compose file
+**/postgres/docker-compose.yml
