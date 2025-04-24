@@ -1,6 +1,8 @@
 # Data Engineering Camp
 Intro to Data Engineering 
 
+Contains course materials for the DataTalksClub Data Engineering ZoomCamp: https://github.com/DataTalksClub/data-engineering-zoomcamp
+
 ## Homework 1
 - **Q1 Answer**: 24.3.1
 ```
