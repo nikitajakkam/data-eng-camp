@@ -20,3 +20,6 @@ green_tripdata_2019-10.csv
 
 # Ignore Kestra docker-compose file
 **/postgres/docker-compose.yml
+
+# Do Not Ignore taxi_zone_lookup file
+!seeds/taxi_zone_lookup.csv
